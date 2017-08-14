@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Give correct storage-filling",
+        "description": "",
+        "id": "storage;give-correct-storage-filling",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 153489343,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the filling is 25",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 15
+                }
+              ],
+              "location": "StorageStepdefs.the_filling_is(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92796,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I withdraw 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 11
+                }
+              ],
+              "location": "StorageStepdefs.i_withdraw(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1636555,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the filling should be 19",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19",
+                  "offset": 22
+                }
+              ],
+              "location": "StorageStepdefs.the_filling_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Storage",
+    "description": "",
+    "id": "storage",
+    "keyword": "Feature",
+    "uri": "storage.feature"
+  }
+]

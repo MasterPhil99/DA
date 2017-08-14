@@ -1,0 +1,26 @@
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.github.samueltbrown:gradle-cucumber-plugin:0.9"
+    }
+}
+
+apply plugin: "java"
+apply plugin: "com.github.samueltbrown.cucumber"
+
+dependencies {
+    cucumberCompile "info.cukes:cucumber-java:1.2.5"
+    cucumberCompile "info.cukes:cucumber-junit:1.2.5"
+    compile group: 'info.cukes', name: 'cucumber-jvm', version: '1.2.5', ext: 'pom'
+    cucumberCompile "junit:junit:4.12"
+}
+
+cucumber {
+    formats = ['pretty','junit:build/cucumber.xml', 'json:build/cucumber.json']
+}
